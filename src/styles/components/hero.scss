@@ -11,10 +11,26 @@
         z-index: -2;
     }
 
-    .hero__content h1 {
-        font-weight: 300;
-        span.bold {
-            font-weight: 700;
+    .hero__content {
+        height: 866px;
+        max-width: 540px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+        h1 {
+            color: var(--color-primary);
+            font-weight: 300;
+            font-size: typo(100px);
+            span.bold {
+                font-weight: 700;
+            }
+        }
+        p {
+            color: var(--color-white);
+            font-size: typo(18px);
         }
     }
 }
