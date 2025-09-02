@@ -2,7 +2,7 @@
 
 <!-- Hero -->
 
-<div class="hero">
+<section class="hero">
     <div class="wrapper">
         <div class="hero__media">
             <img src="assets/images/bg-hero.jpg" alt="Skieur étoile" />
@@ -15,47 +15,73 @@
             </h1>
             <p>
                 Votre rêve de p’tit cul est sur le point de se réaliser. Vous avez toujours rêvé de performer autant sur les internets que sur une surface glacée.
-                Saississez votre chance dès aujourd’hui et joignez l’équipe de timQuébec afin de vous dépasser dans un environement sécurisé et serein.
+                Saississez votre chance dès aujourd’hui et joignez l’équipe de timQuébec afin de vous dépasser dans un environnement sécurisé et serein.
             </p>
             <div class="button-container">
                 <a href="#" class="button">Joignez notre équipe</a>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Athlètes -->
+<section class="atheletes">
+    <div class="wrapper">
+        <div class="right">
+            <h2>Nos athlètes</h2>
+            <p>
+                Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Taqui), ils perfoment
+                toujours à leur maximum.
+            </p>
+        </div>
 
-<h2>Nos athlètes</h2>
-<p>
-    Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Taqui), ils perfoment
-    toujours à leur maximum.
-</p>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="assets/images/matt-pratt.jpg" alt="" />
+                <h3>Matt Pratt</h3>
+                <svg class="icon">
+                    <use xlink:href="#icon-snow"></use>
+                </svg>
+            </div>
+            <div class="grid-item">
+                <img src="assets/images/ben-lavigne.jpg" alt="" />
+                <h3>Ben Lavigne</h3>
+                <svg class="icon">
+                    <use xlink:href="#icon-skate"></use>
+                </svg>
+            </div>
+            <div class="grid-item">
+                <img src="assets/images/jeff-white.jpg" alt="" />
+                <h3>Jeff White</h3>
+                <svg class="icon">
+                    <use xlink:href="#icon-ski"></use>
+                </svg>
+            </div>
+        </div>
 
-<img src="assets/images/matt-pratt.jpg" alt="" />
-<h3>Matt Pratt</h3>
-<svg class="icon">
-    <use xlink:href="#icon-snow"></use>
-</svg>
-
-<img src="assets/images/ben-lavigne.jpg" alt="" />
-<h3>Ben Lavigne</h3>
-<svg class="icon">
-    <use xlink:href="#icon-skate"></use>
-</svg>
-
-<img src="assets/images/jeff-white.jpg" alt="" />
-<h3>Jeff White</h3>
-<svg class="icon">
-    <use xlink:href="#icon-ski"></use>
-</svg>
+    </div>
+</section>
 
 <!-- Gallery -->
+<section class="gallery">
+    <div class="wrapper">
+        <h2>Sports en image</h2>
+        <div class="swiper" data-component="Carousel">
+            <div class="swiper-wrapper">
 
-<h2>Sports en image</h2>
-
-<img src="assets/images/swiper1.jpg" alt="" />
-<img src="assets/images/swiper2.jpg" alt="" />
-<img src="assets/images/swiper3.jpg" alt="" />
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/swiper3.jpg" alt="" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
 
 {% include '_partials/_footer.html' %}

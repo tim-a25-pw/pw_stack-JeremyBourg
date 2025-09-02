@@ -12,8 +12,8 @@
     }
 
     .hero__content {
-        height: 866px;
-        max-width: 540px;
+        min-height: 866px;
+        max-width: 40%;
         position: relative;
         display: flex;
         flex-direction: column;
