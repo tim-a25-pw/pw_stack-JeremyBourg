@@ -60,7 +60,9 @@ export default class Header {
 
   initMobileNav() {
     const toggle = document.querySelector('.js-toggle');
-    toggle.addEventListener('click', this.toggleNavMenu.bind(this));
+    if (toggle) {
+      toggle.addEventListener('click', this.toggleNavMenu.bind(this));
+    }
   }
 
   toggleNavMenu() {

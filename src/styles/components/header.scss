@@ -1,0 +1,107 @@
+/* ==========================================================================
+   header / component
+   ========================================================================== */
+
+.header {
+    position: sticky;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-out;
+
+    .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
+        transform: translateY(-100%) translateY(4px);
+    }
+}
+
+
+.header__toggle {
+    --bar-height: 6px;
+    --bar-width: 40px;
+    --bar-spacing: 8px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+
+    span {
+        background: var(--color-white);
+        border-radius: 3px;
+        height: var(--bar-height);
+        width: var(--bar-width);
+        position: absolute;
+        transition: 0.3s all ease-out;
+
+        top: calc(50% - var(--bar-height) / 2);
+        left: calc(50% - var(--bar-width) / 2);
+
+        &:nth-child(1) {
+            top: calc(
+                50% - var(--bar-height) / 2 - var(--bar-height) -
+                    var(--bar-spacing)
+            );
+        }
+        &:nth-child(3) {
+            top: calc(
+                50% - var(--bar-height) / 2 + var(--bar-height) +
+                    var(--bar-spacing)
+            );
+        }
+    }
+
+    .nav-is-active & {
+        span {
+            top: calc(50% - var(--bar-height) / 2);
+
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: scaleX(0);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   header / end
+   ========================================================================== */
+
+.header {
+    background-color: var(--color-white);
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        a {
+            color: var(--color-black);
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: typo(14px);
+            text-transform: uppercase;
+        }
+    }
+}

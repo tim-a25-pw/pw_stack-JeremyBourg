@@ -1,0 +1,20 @@
+.hero {
+    position: relative;
+
+    .hero__media img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    .hero__content h1 {
+        font-weight: 300;
+        span.bold {
+            font-weight: 700;
+        }
+    }
+}
