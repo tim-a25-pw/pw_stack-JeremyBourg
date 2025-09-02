@@ -1,0 +1,18 @@
+.gallery {
+    div.right-parent {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+
+    .right {
+        font-family: var(--font-primary)
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: typo(50px);
+        color: var(--color-black);
+        margin: 0;
+    }
+}
