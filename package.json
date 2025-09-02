@@ -56,5 +56,8 @@
   "license": "MIT",
   "peerDependencies": {
     "webpack": "^5.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
   }
 }
