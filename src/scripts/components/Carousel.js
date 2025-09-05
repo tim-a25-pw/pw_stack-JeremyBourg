@@ -13,6 +13,7 @@ export default class Carousel {
         nextEl: this.el.querySelector('.swiper-button-next'),
         prevEl: this.el.querySelector('.swiper-button-prev'),
       },
+      direction: 'horizontal',
     };
 
     this.init();
@@ -38,6 +39,9 @@ export default class Carousel {
     }
     if ('loop' in this.el.dataset) {
       this.options.loop = true;
+    }
+    if ('vertical' in this.el.dataset) {
+      this.options.direction = 'vertical';
     }
     this.options.slidesPerView =
       parseFloat(this.el.dataset.slides) || this.options.slidesPerView;
